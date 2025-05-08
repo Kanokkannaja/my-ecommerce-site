@@ -1499,7 +1499,7 @@
               <div class="form-group row">
                 <div class="col-md-6">
     
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
+                  <input type="submit" onclick="contactSubmit()"class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
                 </div>
               </div>
     
@@ -1674,7 +1674,19 @@
       const contact = document.getElementById("content-head");
       contact.innerHTML = "WooooW";
 
+
+      loadDoc("./xml/class_sunday.xml", classXML);
+
+    loadDoc("./json/class_sunday.json",classJSON);
+  //loadSubject("./json/contact_subject.json");
+    loadSubject("http//localhost:3000/api/subject");
     };
+
+    function contactSubmit(){
+      document.getElementById('contect-form').submit();
+      
+    }
+  
   </script>
 
 
