@@ -5,10 +5,10 @@ const Router = express.Router();
 const subject = require('../data/contact_subject.json');
 
 
-router.get('/',(req, res) =>{
+Router.get('/',(req, res) =>{
 //res.end(subject);
 res.json(subject_file);
 });
 
 
-module.exports= router
+module.exports= Router;
